@@ -7,3 +7,12 @@ class manusia
 public:
     void showNiliaipelajar(pelajar &x);
 };
+class pelajar
+{
+private:
+    int nilai;
+
+public:
+    pelajar() : nilai(100) {}
+    friend void manusia::showNiliaipelajar(pelajar &x);
+};
